@@ -12,9 +12,9 @@ b = 50;
 %% Find the values of Kp and Ki:
 Gs = 1/(m*s+b);
 
-cont = 400*(s+0.1)/s;
+cont = ;
 sys = feedback(Gs*cont, 1);
-step(sys);
+step(500*sys);
 
 %Kp = 400 ; Ki = 40
 
